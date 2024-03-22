@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keshav Tessaract Survey Form</title>
+<style>
+  /* Basic styling for the form */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: green;
+  }
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .submit{
+    height: 50px;
+    width: 600px;
+  }
+  .space{
+    height: 50px;
+    width: 600px;
+  }
+
+</style>
+</head>
+<body> 
+    <h1 align="center">  Keshav Tessaract Servey Form</h1>
+
+<form action="submit.php" method="post">
+  <label for="name">Name</label>
+  <input type="text" id="name" placeholder="Enter your Name" name="name" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" placeholder="Enter your email" name="email" required>
+
+  <label for="age">Age</label>
+  <input type="text" id="age" placeholder="Enter your age" name="age" required>
+
+  <label for="description">Which option best describes you?</label>
+  <select id="description" name="description">
+    <option value="Student">Student</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <label for="recommend">Would you recommend Keshav Tessaract to a friend?</label>
+  <input type="radio" value="Yes">Yes<br>
+  <input type="radio" value="no">No<br>
+  <input type="radio" value="maybe">Maybe<br>
+  <br>
+
+
+  <label for="languages">Languages and Frameworks known (Check all that apply)</label>
+  <input type="checkbox" id="c" name="languages[]" value="C">C<Br>
+  <input type="checkbox" id="cpp" name="languages[]" value="C++">C++<br>
+  <input type="checkbox" id="csharp" name="languages[]" value="C#">C#<br>
+  <input type="checkbox" id="Java" name="languages[]" value="Java">Java<br>
+  <input type="checkbox" id="Python" name="languages[]" value="Python">Python<br>
+  <input type="checkbox" id="JavaScript" name="languages[]" value="JavaScript">JavaScript<br>
+  <input type="checkbox" id="React" name="languages[]" value="React">React<br>
+  <input type="checkbox" id="Angular" name="languages[]" value="Angular">Angular<br>
+  <input type="checkbox" id="Django" name="languages[]" value="Django">Django<br>
+  <input type="checkbox" id="Spring" name="languages[]" value="Spring">Spring<br>
+  <!-- Add more checkboxes as needed -->
+  <br>
+
+  <label for="comments">Any comments or suggestions</label>
+  <textarea id="comments" name="comments" rows="4" cols="20" class="space"></textarea>
+    <br>
+    <br>
+  <input type="submit" value="Submit" class="submit">
+</form>
+
+</body>
+</html>
